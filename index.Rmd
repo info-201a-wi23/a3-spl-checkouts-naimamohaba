@@ -1,86 +1,50 @@
 ---
 title: "A3: SPL Library Checkouts"
+author: "Naima Mohaba"
+date: "2/22/2023"
 output: html_document
 ---
 
-### Introduction
+## Introduction
 
-An introduction of the data and a description of the trends/books/items you are choosing to analyze (and why!)
+More likely than not, a lot of people have visited a library and checked out a book. Whether it’s for school, work, or just for a personal read, people come in and out checking out various types of materials. You might wonder what other people like to read or what books are really popular at the given time so you can check it out. That’s what this data allows you to do. The data used for analysis is the Seattle Public Library's checkout records for the 2022-2023 period. The dataset includes information about the material types, publication years, and checkout counts for a wide variety of books, movies, and other items available at the library. 
 
-### Summary Information
+This report aims to give a better understanding about the Colleen Hoover's popularity and trends among Seattle Public Library patrons by analyzing checkout data from the 2022-2023 fiscal year. Three visualizations were created to showcase the data: a bar chart of the top 5 material types with the most checkouts for Colleen Hoover books, a line chart showing the checkout trends over time for Colleen Hoover, and a table showing the top 5 most checked out books by Colleen Hoover. 
+	
+I chose to analyze these trends because Colleen Hoover has been a really popular author as of recently, I am also a huge fan of her work, and the interest in understanding how the publication year may affect the popularity of her books at the Seattle Public Library. 
 
-Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
+## Summary Information
 
-These will likely be calculated using your DPLYR skills, answering questions such as:
+Based on the data for Colleen Hoover, we can conclude the following findings. The average number of checkouts for each material type is shown in the 'avg_checkouts' table, which suggests that **ebooks** have the highest average checkouts. The month with the most checkouts for the book 'Verity' by Colleen Hoover is **January**, while the month with the least checkouts is **Feburary**, as shown in the 'max_month' and 'min_month' tables. For Colleen Hoover, ebooks seem to be the more popular type to checkout. Lastly, the month with the most checkouts for ebooks for Colleen Hoover is **January 2023**, while the month with the least checkouts is **January 2022**, as shown in the 'hoover_ebook_month' table. This also shows us what I thought was to be true, Colleen Hoover is getting more attention in more recent times, more specifically, checkouts started to spike starting on **September 2022**.
 
-- What is the average number of checkouts for each item?
-- What is the month or year with the most/least checkouts for a book that you're interested in?
-- What is the month or year with the most/least checkouts for ebooks?
-- How has the number of print book checkouts changed over time?
+## The Dataset
 
-Feel free to calculate and report values that you find relevant.
+The dataset is the 2022-2023 All Checkouts SPL Data, which contains information on checkout records from the Seattle Public Library system. The dataset was collected by the Seattle Public Library system and covers the period from January 2022 to present. The data includes information on the material type, publication year, creator, and checkout month for each checkout record.
 
-### The Dataset
+The data was likely collected automatically by the library's checkout system, which records the relevant information when a patron checks out a book. The purpose of collecting this data is likely to better understand library usage patterns and to inform decision-making related to library operations and services.
 
-- Who collected/published the data?  
-- What are the parameters of the data (dates, number of checkouts, kinds of books, etc.)?
-- How was the data collected or generated?  
-- Why was the data collected?  
-- What, if any, ethical questions do you need to consider when working with this data?  
-- What are possible limitations or problems with this data?   (at least 200 words)
+When working with this data, there are several ethical considerations to keep in mind. Firstly, the data contains personal information about library patrons, such as their borrowing history and potentially their reading preferences. It is important to ensure that this data is handled securely and that patron privacy is respected. Additionally, there may be biases in the data, such as over-representation of certain kinds of books or authors, that could impact any analyses conducted using the data.
+
+One potential limitation of the data is that it only includes checkout records from a single library system in a specific geographic location. This could limit the generalizability of any findings to other library systems or to patrons in other locations. Additionally, the data may be limited by the accuracy of the information recorded by the checkout system, which could vary depending on factors such as user error or system malfunctions.
 
 
-### First Trends Over Time Chart
+## Chart 1
 
-Include a chart. Make sure to describe why you included the chart, and what patterns emerged
-
-The first chart that you will create and include will show the trend over time of your variable/topic/interest. Think carefully about what you want to communicate to your user (you may have to find relevant trends in the dataset first!). Here are some requirements to help guide your design:
-
-- Show more than one, but fewer than ~10 trends
-  - For example, two books, or 5 different mediums
-- You must have clear x and y axis labels
-- The chart needs a clear title 
-- You need a legend for your different line colors and a clear - legend title
-In your .Rmd file, make sure to describe why you included the chart, and what patterns emerged
-
-When we say "clear" or "human readable" titles and labels, that means that you should not just display the variable name.
-
-Here's an example of how to run an R script inside an RMarkdown file:
-
-``````{r, echo = FALSE, warning = FALSE, code = readLines("chart1_example.R")}
+```{r, echo = FALSE, warning = FALSE, message = FALSE, code = readLines("chart1_example.R")}
 ```
 
-### Second Trends Over Time Chart
+This line graph compares the total number of checkouts over time for James Patterson and Colleen Hoover.
 
-Include a chart. Make sure to describe why you included the chart, and what patterns emerged
+## Chart 2
 
-The second chart that you will create and include will show another trend over time of your variable/topic/interest. Think carefully about what you want to communicate to your user (you may have to find relevant trends in the dataset first!). Here are some requirements to help guide your design:
-
-- Show more than one, but fewer than ~10 trends
-  - For example, two books, or 5 different mediums
-- You must have clear x and y axis labels
-- The chart needs a clear title 
-- You need a legend for your different line colors and a clear - legend title
-In your .Rmd file, make sure to describe why you included the chart, and what patterns emerged
-
-When we say "clear" or "human readable" titles and labels, that means that you should not just display the variable name.
-
-Here's an example of how to run an R script inside an RMarkdown file:
-
-``````{r, echo = FALSE, code = readLines("chart2_example.R")}
+```{r, echo = FALSE,  warning = FALSE, message = FALSE, code = readLines("chart2_example.R")}
 ```
+This line plot shows the checkout trends over time for the top 5 most checked out books by Colleen Hoover.
 
-### Your Choice
+## Chart3
 
-The last chart is up to you. It could be a line plot, scatter plot, histogram, bar plot, stacked bar plot, and more. Here are some requirements to help guide your design:
-
-- You must have clear x and y axis labels
-- The chart needs a clear title 
-- You need a legend for your different line colors and a clear legend title
-
-Here's an example of how to run an R script inside an RMarkdown file:
-
-``````{r, echo = FALSE, code = readLines("chart2_example.R")}
+```{r, echo = FALSE,  warning = FALSE, message = FALSE, code = readLines("chart3_example.R")}
 ```
+This bar plot shows the top 5 material types with the most checkouts for Colleen Hoover.
 
 
