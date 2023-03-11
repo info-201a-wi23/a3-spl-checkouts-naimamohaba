@@ -33,18 +33,23 @@ One potential limitation of the data is that it only includes checkout records f
 ```{r, echo = FALSE, warning = FALSE, message = FALSE, code = readLines("chart1_example.R")}
 ```
 
-This line graph compares the total number of checkouts over time for James Patterson and Colleen Hoover.
+## Insights
+I included this chart to analyze the popularity of Colleen Hoover's books over time and identify any noticeable patterns or trends. The chart reveals that the total checkouts of Colleen Hoover's books have been increasing steadily since 2016, with a peak of over 1,500 checkouts in 2022. This trend suggests that Colleen Hoover's books have been gaining popularity among library users in Seattle. The data also shows some seasonal patterns, with higher checkouts in the summer months (June - August) and lower checkouts in the winter months (December - February).
 
 ## Chart 2
 
 ```{r, echo = FALSE,  warning = FALSE, message = FALSE, code = readLines("chart2_example.R")}
 ```
-This line plot shows the checkout trends over time for the top 5 most checked out books by Colleen Hoover.
+
+## Insights 
+I included this chart to analyze the popularity of specific books by Colleen Hoover and identify any noticeable patterns or trends. The chart reveals that "Verity" is the most popular book among the top 5, with consistently high checkouts throughout the entire time period. The other 4 books show more variability in their checkout trends, with some peaks and dips in popularity. "Regretting You" and "It Ends with Us" show overall increasing trends, while "All Your Perfects" and "Confess" show more fluctuation over time.
 
 ## Chart3
 
 ```{r, echo = FALSE,  warning = FALSE, message = FALSE, code = readLines("chart3_example.R")}
 ```
-This bar plot shows the top 5 material types with the most checkouts for Colleen Hoover.
+## Insights
+I included this chart to identify the most popular material types for Colleen Hoover's books and to analyze any patterns or trends in checkout behavior across material types. The chart reveals that "EBOOK" is the most popular material type, with over 2.5 million checkouts. The other 4 material types show significantly lower checkout numbers, with "BOOK" being the second most popular material type with just over 400,000 checkouts. The other material types included in the top 5 are "EAUDIO", "EVIDEO", and "AUDIOBOOK", with checkout numbers ranging from around 50,000 to 150,000.
+
 
 
